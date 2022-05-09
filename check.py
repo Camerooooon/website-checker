@@ -30,7 +30,7 @@ while True:
     with open(OUT_DIR + "/latest_md5", "w+") as f:
         f.write(str(latest_md5))
     
-    with open(OUT_DIR + str(datetime.datetime.now()) + ".pdf", "w+b") as f:
+    with open(OUT_DIR + "/" + str(datetime.datetime.now()) + ".pdf", "w+b") as f:
         print("Writing out file")
         f.write(r.content)
         f.close()
