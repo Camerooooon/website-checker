@@ -4,7 +4,7 @@ import datetime
 import os
 import time
 
-DELAY=5
+DELAY=60*120
 WEBSITE_URL=os.environ["CH_WEBSITE_URL"]
 OUT_DIR=os.environ["CH_OUT_DIR"]
 
