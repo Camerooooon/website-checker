@@ -20,7 +20,7 @@ while True:
         print("Success, saving..")
     
     latest_md5 = hashlib.md5(r.content).digest()
-    with open(OUT_DIR + "latest_md5", "r") as f:
+    with open(OUT_DIR + "/latest_md5", "r") as f:
         md5 = f.readline()
         print(md5 + " compared to " + str(latest_md5))
         if (md5 == str(latest_md5)):
