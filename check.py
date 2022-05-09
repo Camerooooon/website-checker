@@ -6,9 +6,6 @@ import os
 WEBSITE_URL=os.environ["CH_WEBSITE_URL"]
 OUT_DIR=os.environ["CH_OUT_DIR"]
 
-WEBSITE_URL="https://www.citruscircuits.org/uploads/6/9/3/4/6934550/2021-22_team_handbook__2_.pdf"
-OUT_DIR="/home/cameron/website_monitoring/citrus/"
-
 print("Time is: " + str(datetime.datetime.now()) + " checking website for changes")
 
 r = requests.get(WEBSITE_URL)
